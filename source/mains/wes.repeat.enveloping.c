@@ -130,13 +130,13 @@ void C74_EXPORT ext_main(void* moduleRef)
     CLASS_ATTR_STYLE_LABEL(c,"envelopeamptype",0,"enumindex","Envelope Amp Type");
     CLASS_ATTR_ENUMINDEX(c,"envelopeamptype", 0, "Fall Rise");
 
-    CLASS_ATTR_CHAR(c, "envelopepitchon", 0, t_buf_repeatgliss, envPitchOnOff_in);
-       CLASS_ATTR_STYLE_LABEL(c,"envelopepitchon",0,"enumindex","Envelope Pitch On");
-       CLASS_ATTR_ENUMINDEX(c,"envelopepitchon", 0, "On Off");
+    CLASS_ATTR_CHAR(c, "pitchonoff", 0, t_buf_repeatgliss, envPitchOnOff_in);
+       CLASS_ATTR_STYLE_LABEL(c,"pitchonoff",0,"enumindex","Envelope Pitch On/Off");
+       CLASS_ATTR_ENUMINDEX(c,"pitchonoff", 0, "On Off");
      
-     CLASS_ATTR_CHAR(c, "envelopeampon", 0, t_buf_repeatgliss, envAmpOnOff_in);
-     CLASS_ATTR_STYLE_LABEL(c,"envelopeampon",0,"enumindex","Envelope Amp On");
-     CLASS_ATTR_ENUMINDEX(c,"envelopeampon", 0, "On Off");
+     CLASS_ATTR_CHAR(c, "amponoff", 0, t_buf_repeatgliss, envAmpOnOff_in);
+     CLASS_ATTR_STYLE_LABEL(c,"amponoff",0,"enumindex","Envelope Amp On/Off");
+     CLASS_ATTR_ENUMINDEX(c,"amponoff", 0, "On Off");
 
     earsbufobj_class_add_outname_attr(c);
     earsbufobj_class_add_blocking_attr(c);

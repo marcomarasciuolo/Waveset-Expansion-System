@@ -225,7 +225,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "noverlap",
+					"attr" : "overlap",
 					"id" : "obj-25",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -406,7 +406,7 @@
 					"patching_rect" : [ 522.5, 201.5, 100.0, 18.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-25", "attrui", "attr", "noverlap", 5, "obj-25", "attrui", "int", 4, 5, "obj-5", "attrui", "attr", "maxoutchannel", 5, "obj-5", "attrui", "int", 2, 5, "obj-46", "attrui", "attr", "repeatmult", 5, "obj-46", "attrui", "int", 0, 5, "obj-4", "attrui", "attr", "minsamp", 5, "obj-4", "attrui", "int", 100, 5, "obj-2", "attrui", "attr", "cross", 5, "obj-2", "attrui", "int", 5, 5, "obj-3", "number", "int", 50 ]
+							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-25", "attrui", "attr", "overlap", 5, "obj-25", "attrui", "int", 4, 5, "obj-5", "attrui", "attr", "maxoutchannel", 5, "obj-5", "attrui", "int", 2, 5, "obj-46", "attrui", "attr", "repeatmult", 5, "obj-46", "attrui", "int", 0, 5, "obj-4", "attrui", "attr", "minsamp", 5, "obj-4", "attrui", "int", 100, 5, "obj-2", "attrui", "attr", "cross", 5, "obj-2", "attrui", "int", 5, 5, "obj-3", "number", "int", 50 ]
 						}
  ]
 				}

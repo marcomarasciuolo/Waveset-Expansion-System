@@ -223,6 +223,18 @@
 
 	<!--ATTRIBUTES-->
 	<attributelist>
+		<attribute name="amponoff" get="1" set="1" type="int" size="1">
+			<digest>
+				Envelope Amp On/Off
+			</digest>
+			<description>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Envelope Amp On/Off" />
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
+				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
+			</attributelist>
+		</attribute>
 		<attribute name="blocking" get="1" set="1" type="int" size="1">
 			<digest>
 				Blocking Mode
@@ -240,38 +252,29 @@
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
 			</attributelist>
 		</attribute>
-		<attribute name="envAmpSlope" get="1" set="1" type="float" size="1">
+		<attribute name="cross" get="1" set="1" type="int" size="1">
 			<digest>
 				
 			</digest>
 			<description>
 			</description>
 			<attributelist>
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="text" />
 			</attributelist>
 		</attribute>
-		<attribute name="envPitchSlope" get="1" set="1" type="float" size="1">
+		<attribute name="envampslope" get="1" set="1" type="float" size="1">
 			<digest>
 				
 			</digest>
 			<description>
 			</description>
 			<attributelist>
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="text" />
 			</attributelist>
 		</attribute>
-		<attribute name="envelopeAmpOn" get="1" set="1" type="int" size="1">
-			<digest>
-				Envelope Amp On
-			</digest>
-			<description>
-			</description>
-			<attributelist>
-				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Envelope Amp On" />
-				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
-			</attributelist>
-		</attribute>
-		<attribute name="envelopeAmpType" get="1" set="1" type="int" size="1">
+		<attribute name="envelopeamptype" get="1" set="1" type="int" size="1">
 			<digest>
 				Envelope Amp Type
 			</digest>
@@ -279,21 +282,11 @@
 			</description>
 			<attributelist>
 				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Envelope Amp Type" />
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
 			</attributelist>
 		</attribute>
-		<attribute name="envelopePitchOn" get="1" set="1" type="int" size="1">
-			<digest>
-				Envelope Pitch On
-			</digest>
-			<description>
-			</description>
-			<attributelist>
-				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Envelope Pitch On" />
-				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
-			</attributelist>
-		</attribute>
-		<attribute name="envelopePitchType" get="1" set="1" type="int" size="1">
+		<attribute name="envelopepitchtype" get="1" set="1" type="int" size="1">
 			<digest>
 				Envelope Pitch Type
 			</digest>
@@ -301,26 +294,29 @@
 			</description>
 			<attributelist>
 				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Envelope Pitch Type" />
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
 			</attributelist>
 		</attribute>
-		<attribute name="minSamp" get="1" set="1" type="int" size="1">
+		<attribute name="envpitchslope" get="1" set="1" type="float" size="1">
 			<digest>
 				
 			</digest>
 			<description>
 			</description>
 			<attributelist>
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="text" />
 			</attributelist>
 		</attribute>
-		<attribute name="nCross" get="1" set="1" type="int" size="1">
+		<attribute name="minsamp" get="1" set="1" type="int" size="1">
 			<digest>
 				
 			</digest>
 			<description>
 			</description>
 			<attributelist>
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="text" />
 			</attributelist>
 		</attribute>
@@ -341,6 +337,7 @@
 			</description>
 			<attributelist>
 				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Output Naming Policy" />
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
 			</attributelist>
 		</attribute>
@@ -354,27 +351,42 @@
 			</description>
 			<attributelist>
 				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Output Buffer Names" />
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="text" />
 			</attributelist>
 		</attribute>
-		<attribute name="pitchMaxFactor" get="1" set="1" type="float" size="1">
+		<attribute name="pitchmax" get="1" set="1" type="float" size="1">
 			<digest>
 				
 			</digest>
 			<description>
 			</description>
 			<attributelist>
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="text" />
 			</attributelist>
 		</attribute>
-		<attribute name="pitchMinFactor" get="1" set="1" type="float" size="1">
+		<attribute name="pitchmin" get="1" set="1" type="float" size="1">
 			<digest>
 				
 			</digest>
 			<description>
 			</description>
 			<attributelist>
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="text" />
+			</attributelist>
+		</attribute>
+		<attribute name="pitchonoff" get="1" set="1" type="int" size="1">
+			<digest>
+				Envelope Pitch On/Off
+			</digest>
+			<description>
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Envelope Pitch On/Off" />
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
+				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
 			</attributelist>
 		</attribute>
 		<attribute name="polyout" get="1" set="1" type="int" size="1">
@@ -393,13 +405,14 @@
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
 			</attributelist>
 		</attribute>
-		<attribute name="repeatMultiply" get="1" set="1" type="int" size="1">
+		<attribute name="repeatmult" get="1" set="1" type="int" size="1">
 			<digest>
 				
 			</digest>
 			<description>
 			</description>
 			<attributelist>
+				<attribute name="paint" get="1" set="1" type="int" size="1" value="1" />
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="text" />
 			</attributelist>
 		</attribute>

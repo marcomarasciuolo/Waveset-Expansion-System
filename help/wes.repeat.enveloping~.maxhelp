@@ -219,7 +219,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "envelopeampon",
+					"attr" : "amponoff",
 					"id" : "obj-133",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -233,7 +233,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "envelopepitchon",
+					"attr" : "pitchonoff",
 					"id" : "obj-134",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -586,7 +586,7 @@
 					"patching_rect" : [ 558.0, 196.5, 100.0, 18.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 3, 5, "obj-173", "attrui", "attr", "pitchmax", 5, "obj-173", "attrui", "float", 2.0, 5, "obj-171", "attrui", "attr", "pitchmin", 5, "obj-171", "attrui", "float", 0.050000000745058, 5, "obj-131", "attrui", "attr", "envpitchslope", 5, "obj-131", "attrui", "float", 2.0, 5, "obj-137", "attrui", "attr", "repeatmult", 5, "obj-137", "attrui", "int", 0, 5, "obj-136", "attrui", "attr", "envelopepitchtype", 5, "obj-136", "attrui", "int", 0, 5, "obj-135", "attrui", "attr", "envelopeamptype", 5, "obj-135", "attrui", "int", 0, 5, "obj-134", "attrui", "attr", "envelopepitchon", 5, "obj-134", "attrui", "int", 0, 5, "obj-133", "attrui", "attr", "envelopeampon", 5, "obj-133", "attrui", "int", 0, 5, "obj-130", "attrui", "attr", "envampslope", 5, "obj-130", "attrui", "float", 2.0, 5, "obj-93", "attrui", "attr", "cross", 5, "obj-93", "attrui", "int", 1, 5, "obj-88", "attrui", "attr", "minsamp", 5, "obj-88", "attrui", "int", 150 ]
+							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 20, 5, "obj-173", "attrui", "attr", "pitchmax", 5, "obj-173", "attrui", "float", 2.0, 5, "obj-171", "attrui", "attr", "pitchmin", 5, "obj-171", "attrui", "float", 0.050000000745058, 5, "obj-131", "attrui", "attr", "envpitchslope", 5, "obj-131", "attrui", "float", 2.0, 5, "obj-137", "attrui", "attr", "repeatmult", 5, "obj-137", "attrui", "int", 0, 5, "obj-136", "attrui", "attr", "envelopepitchtype", 5, "obj-136", "attrui", "int", 0, 5, "obj-135", "attrui", "attr", "envelopeamptype", 5, "obj-135", "attrui", "int", 0, 5, "obj-134", "attrui", "attr", "pitchonoff", 5, "obj-134", "attrui", "int", 0, 5, "obj-133", "attrui", "attr", "amponoff", 5, "obj-133", "attrui", "int", 0, 5, "obj-130", "attrui", "attr", "envampslope", 5, "obj-130", "attrui", "float", 2.0, 5, "obj-93", "attrui", "attr", "cross", 5, "obj-93", "attrui", "int", 1, 5, "obj-88", "attrui", "attr", "minsamp", 5, "obj-88", "attrui", "int", 150 ]
 						}
  ]
 				}

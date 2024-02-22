@@ -112,7 +112,7 @@ void C74_EXPORT ext_main(void* moduleRef)
     CLASS_ATTR_LONG(c, "minsamp", 0, t_buf_repeatoverlap, sampMin_in);
     CLASS_ATTR_LONG(c, "repeatmult", 0, t_buf_repeatoverlap, repeatMult_in);
     CLASS_ATTR_LONG(c, "cross", 0, t_buf_repeatoverlap, cross_in);
-    CLASS_ATTR_LONG(c, "noverlap", 0, t_buf_repeatoverlap, nOverlap_in);
+    CLASS_ATTR_LONG(c, "overlap", 0, t_buf_repeatoverlap, nOverlap_in);
     CLASS_ATTR_LONG(c, "maxoutchannel", 0, t_buf_repeatoverlap, maxOutChannel_in);
 
     earsbufobj_class_add_outname_attr(c);

@@ -240,7 +240,7 @@
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
 			</attributelist>
 		</attribute>
-		<attribute name="minSamp" get="1" set="1" type="int" size="1">
+		<attribute name="cross" get="1" set="1" type="int" size="1">
 			<digest>
 				
 			</digest>
@@ -250,7 +250,7 @@
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="text" />
 			</attributelist>
 		</attribute>
-		<attribute name="nCross" get="1" set="1" type="int" size="1">
+		<attribute name="minsamp" get="1" set="1" type="int" size="1">
 			<digest>
 				
 			</digest>
@@ -309,7 +309,7 @@
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="enumindex" />
 			</attributelist>
 		</attribute>
-		<attribute name="repeatMult" get="1" set="1" type="int" size="1">
+		<attribute name="repeatmult" get="1" set="1" type="int" size="1">
 			<digest>
 				
 			</digest>
