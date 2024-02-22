@@ -1,0 +1,27 @@
+/Users/marcomarasciuolo/Documents/Max 8/Packages/Waveset Expansion System/source/mains
+
+
+
+/Users/marcomarasciuolo/Documents/Max 8/Packages/bach/source/commons/doc/bach_doc_commons.h
+/Users/marcomarasciuolo/Documents/Max 8/Packages/ears/source/commons/ears_doc_commons.h
+/Users/marcomarasciuolo/Documents/Max 8/Packages/Waveset Expansion System/docs/refpages/wes_ref
+/Users/marcomarasciuolo/Documents/Max 8/Packages/Waveset Expansion System/init
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+wes
+1
+0
+0
+0
+0
+/Users/marcomarasciuolo/Documents/Max 8/Packages/ears/source/commons/ears_doc_substitutions.h
+/Users/marcomarasciuolo/Documents/Max 8/Packages/Waveset Expansion System/interfaces
+1n

@@ -1,0 +1,10 @@
+max oblist "wes objects" wes.repeat.attract~;
+max oblist "wes objects" wes.waveform.reduction~;
+max oblist "wes objects" wes.waveform.lag~;
+max oblist "wes objects" wes.repeat.simplify~;
+max oblist "wes objects" wes.waveform.interpolate~;
+max oblist "wes objects" wes.waveform.uniform~;
+max oblist "wes objects" wes.repeat.overlap~;
+max oblist "wes objects" wes.waveform.shift~;
+max oblist "wes objects" wes.repeat.enveloping~;
+max oblist "wes objects" wes.repeat.pendulum~;

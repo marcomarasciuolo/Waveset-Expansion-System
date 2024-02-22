@@ -1,0 +1,72 @@
+{
+  "wes.repeat.attract~": {
+    "digest": "Repeats waveset",
+    "module": "wes",
+    "category": [
+      "wes basic"
+    ]
+  },
+  "wes.waveform.reduction~": {
+    "digest": "Repeats waveform n. times",
+    "module": "waveset",
+    "category": [
+      "waveset basic"
+    ]
+  },
+  "wes.waveform.lag~": {
+    "digest": "Waveset spacing",
+    "module": "waveset",
+    "category": [
+      "waveset basic"
+    ]
+  },
+  "wes.repeat.simplify~": {
+    "digest": "Repeats waveset",
+    "module": "waveset",
+    "category": [
+      "waveset basic"
+    ]
+  },
+  "wes.waveform.interpolate~": {
+    "digest": "Waveset Interpolate",
+    "module": "waveset",
+    "category": [
+      "waveset basic"
+    ]
+  },
+  "wes.waveform.uniform~": {
+    "digest": "Normalize waveset period",
+    "module": "waveset",
+    "category": [
+      "waveset basic"
+    ]
+  },
+  "wes.repeat.overlap~": {
+    "digest": "Repeats and overlap",
+    "module": "waveset",
+    "category": [
+      "waveset basic"
+    ]
+  },
+  "wes.waveform.shift~": {
+    "digest": "Shift waveform",
+    "module": "waveset",
+    "category": [
+      "waveset basic"
+    ]
+  },
+  "wes.repeat.enveloping~": {
+    "digest": "Apply envelope",
+    "module": "waveset",
+    "category": [
+      "waveset basic"
+    ]
+  },
+  "wes.repeat.pendulum~": {
+    "digest": "Reads forwards and backwards",
+    "module": "waveset",
+    "category": [
+      "waveset basic"
+    ]
+  }
+}

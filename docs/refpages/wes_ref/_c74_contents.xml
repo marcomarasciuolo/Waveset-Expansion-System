@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<root>
+<refpage name='wes.repeat.attract~.maxref.xml'/>
+<refpage name='wes.waveform.reduction~.maxref.xml'/>
+<refpage name='wes.waveform.lag~.maxref.xml'/>
+<refpage name='wes.repeat.simplify~.maxref.xml'/>
+<refpage name='wes.waveform.interpolate~.maxref.xml'/>
+<refpage name='wes.waveform.uniform~.maxref.xml'/>
+<refpage name='wes.repeat.overlap~.maxref.xml'/>
+<refpage name='wes.waveform.shift~.maxref.xml'/>
+<refpage name='wes.repeat.enveloping~.maxref.xml'/>
+<refpage name='wes.repeat.pendulum~.maxref.xml'/>
+</root>
