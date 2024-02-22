@@ -165,7 +165,7 @@
 					"patching_rect" : [ 547.5, 218.5, 100.0, 18.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 3, 5, "<invalid>", "attrui", "attr", "InterpActivate", 5, "<invalid>", "attrui", "int", 1, 5, "<invalid>", "attrui", "attr", "repeatMult", 5, "<invalid>", "attrui", "int", 1, 5, "<invalid>", "attrui", "attr", "minSamp", 5, "<invalid>", "attrui", "int", 100, 5, "<invalid>", "attrui", "attr", "nCross", 5, "<invalid>", "attrui", "int", 1 ]
+							"data" : [ 5, "obj-28", "attrui", "attr", "minsamp", 5, "obj-28", "attrui", "int", 15, 5, "obj-23", "attrui", "attr", "cross", 5, "obj-23", "attrui", "int", 1, 5, "obj-18", "attrui", "attr", "repeatmult", 5, "obj-18", "attrui", "int", 0, 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 3 ]
 						}
  ]
 				}
@@ -710,7 +710,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "repeatMult",
+					"attr" : "repeatmult",
 					"id" : "obj-18",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -723,7 +723,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nCross",
+					"attr" : "cross",
 					"id" : "obj-23",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -736,7 +736,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "minSamp",
+					"attr" : "minsamp",
 					"id" : "obj-28",
 					"maxclass" : "attrui",
 					"numinlets" : 1,

@@ -114,29 +114,29 @@ void C74_EXPORT ext_main(void* moduleRef)
     // buffer name (depending on the <m>naming</m> attribute).
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(repeatgliss)
     
-    CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_repeatgliss, sampMin_in);
+    CLASS_ATTR_LONG(c, "minsamp", 0, t_buf_repeatgliss, sampMin_in);
     CLASS_ATTR_LONG(c, "cross", 0, t_buf_repeatgliss, cross_in);
-    CLASS_ATTR_LONG(c, "repeatMultiply", 0, t_buf_repeatgliss, repeatMult_in);
-    CLASS_ATTR_FLOAT(c, "envPitchSlope", 0, t_buf_repeatgliss, slopePitch_in);
-    CLASS_ATTR_FLOAT(c, "envAmpSlope", 0, t_buf_repeatgliss, slopeAmp_in);
-    CLASS_ATTR_FLOAT(c, "pitchMinFactor", 0, t_buf_repeatgliss, pitchMin_in);
-    CLASS_ATTR_FLOAT(c, "pitchMaxFactor", 0, t_buf_repeatgliss, pitchMax_in);
+    CLASS_ATTR_LONG(c, "repeatmult", 0, t_buf_repeatgliss, repeatMult_in);
+    CLASS_ATTR_FLOAT(c, "envpitchslope", 0, t_buf_repeatgliss, slopePitch_in);
+    CLASS_ATTR_FLOAT(c, "envampslope", 0, t_buf_repeatgliss, slopeAmp_in);
+    CLASS_ATTR_FLOAT(c, "pitchmin", 0, t_buf_repeatgliss, pitchMin_in);
+    CLASS_ATTR_FLOAT(c, "pitchmax", 0, t_buf_repeatgliss, pitchMax_in);
     
-    CLASS_ATTR_CHAR(c, "envelopePitchType", 0, t_buf_repeatgliss, pitchEGtype_in);
-      CLASS_ATTR_STYLE_LABEL(c,"envelopePitchType",0,"enumindex","Envelope Pitch Type");
-      CLASS_ATTR_ENUMINDEX(c,"envelopePitchType", 0, "Fall Rise");
+    CLASS_ATTR_CHAR(c, "envelopepitchtype", 0, t_buf_repeatgliss, pitchEGtype_in);
+      CLASS_ATTR_STYLE_LABEL(c,"envelopepitchtype",0,"enumindex","Envelope Pitch Type");
+      CLASS_ATTR_ENUMINDEX(c,"envelopepitchtype", 0, "Fall Rise");
     
-    CLASS_ATTR_CHAR(c, "envelopeAmpType", 0, t_buf_repeatgliss, ampEGtype_in);
-    CLASS_ATTR_STYLE_LABEL(c,"envelopeAmpType",0,"enumindex","Envelope Amp Type");
-    CLASS_ATTR_ENUMINDEX(c,"envelopeAmpType", 0, "Fall Rise");
+    CLASS_ATTR_CHAR(c, "envelopeamptype", 0, t_buf_repeatgliss, ampEGtype_in);
+    CLASS_ATTR_STYLE_LABEL(c,"envelopeamptype",0,"enumindex","Envelope Amp Type");
+    CLASS_ATTR_ENUMINDEX(c,"envelopeamptype", 0, "Fall Rise");
 
-    CLASS_ATTR_CHAR(c, "envelopePitchOn", 0, t_buf_repeatgliss, envPitchOnOff_in);
-       CLASS_ATTR_STYLE_LABEL(c,"envelopePitchOn",0,"enumindex","Envelope Pitch On");
-       CLASS_ATTR_ENUMINDEX(c,"envelopePitchOn", 0, "On Off");
+    CLASS_ATTR_CHAR(c, "envelopepitchon", 0, t_buf_repeatgliss, envPitchOnOff_in);
+       CLASS_ATTR_STYLE_LABEL(c,"envelopepitchon",0,"enumindex","Envelope Pitch On");
+       CLASS_ATTR_ENUMINDEX(c,"envelopepitchon", 0, "On Off");
      
-     CLASS_ATTR_CHAR(c, "envelopeAmpOn", 0, t_buf_repeatgliss, envAmpOnOff_in);
-     CLASS_ATTR_STYLE_LABEL(c,"envelopeAmpOn",0,"enumindex","Envelope Amp On");
-     CLASS_ATTR_ENUMINDEX(c,"envelopeAmpOn", 0, "On Off");
+     CLASS_ATTR_CHAR(c, "envelopeampon", 0, t_buf_repeatgliss, envAmpOnOff_in);
+     CLASS_ATTR_STYLE_LABEL(c,"envelopeampon",0,"enumindex","Envelope Amp On");
+     CLASS_ATTR_ENUMINDEX(c,"envelopeampon", 0, "On Off");
 
     earsbufobj_class_add_outname_attr(c);
     earsbufobj_class_add_blocking_attr(c);

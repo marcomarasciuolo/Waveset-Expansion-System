@@ -106,9 +106,9 @@ void C74_EXPORT ext_main(void* moduleRef)
     // buffer name (depending on the <m>naming</m> attribute).
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(wavesimplify)
     
-    CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_wavesimplify, sampMin_in);
+    CLASS_ATTR_LONG(c, "minsamp", 0, t_buf_wavesimplify, sampMin_in);
     CLASS_ATTR_LONG(c, "cross", 0, t_buf_wavesimplify, cross_in);
-    CLASS_ATTR_LONG(c, "nextWaveMult", 0, t_buf_wavesimplify, nextWave_in);
+    CLASS_ATTR_LONG(c, "nextwavemult", 0, t_buf_wavesimplify, nextWave_in);
    
 
     earsbufobj_class_add_outname_attr(c);

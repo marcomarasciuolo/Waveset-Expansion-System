@@ -196,7 +196,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 600.5, 123.5, 98.0, 22.0 ],
+					"patching_rect" : [ 558.25, 123.5, 98.0, 22.0 ],
 					"text" : "buffer~ snd2 can"
 				}
 
@@ -288,7 +288,7 @@
 					"patching_rect" : [ 522.5, 201.5, 100.0, 18.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-28", "attrui", "attr", "minSamp", 5, "obj-28", "attrui", "int", 15, 5, "obj-23", "attrui", "attr", "nCross", 5, "obj-23", "attrui", "int", 1, 5, "obj-18", "attrui", "attr", "lagMult", 5, "obj-18", "attrui", "int", 1, 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-2", "flonum", "float", 0.0 ]
+							"data" : [ 5, "obj-28", "attrui", "attr", "minsamp", 5, "obj-28", "attrui", "int", 150, 5, "obj-23", "attrui", "attr", "cross", 5, "obj-23", "attrui", "int", 1, 5, "obj-18", "attrui", "attr", "lagmult", 5, "obj-18", "attrui", "float", 1.0, 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-2", "flonum", "float", 7.0 ]
 						}
  ]
 				}
@@ -551,7 +551,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "snd3",
+					"buffername" : "snd2",
 					"id" : "obj-264",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -686,7 +686,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "lagMult",
+					"attr" : "lagmult",
 					"id" : "obj-18",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -699,7 +699,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nCross",
+					"attr" : "cross",
 					"id" : "obj-23",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -712,7 +712,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "minSamp",
+					"attr" : "minsamp",
 					"id" : "obj-28",
 					"maxclass" : "attrui",
 					"numinlets" : 1,

@@ -90,7 +90,7 @@
 					"patching_rect" : [ 549.5, 206.0, 100.0, 18.5 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-118", "attrui", "attr", "nextWaveMult", 5, "obj-118", "attrui", "int", 1, 5, "obj-183", "attrui", "attr", "minSamp", 5, "obj-183", "attrui", "int", 100, 5, "obj-182", "attrui", "attr", "nCross", 5, "obj-182", "attrui", "int", 1, 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 3 ]
+							"data" : [ 5, "obj-118", "attrui", "attr", "nextwavemult", 5, "obj-118", "attrui", "int", 1, 5, "obj-183", "attrui", "attr", "minsamp", 5, "obj-183", "attrui", "int", 15, 5, "obj-182", "attrui", "attr", "cross", 5, "obj-182", "attrui", "int", 1, 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 50 ]
 						}
  ]
 				}
@@ -478,7 +478,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nCross",
+					"attr" : "cross",
 					"id" : "obj-182",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -491,7 +491,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "minSamp",
+					"attr" : "minsamp",
 					"id" : "obj-183",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -504,7 +504,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nextWaveMult",
+					"attr" : "nextwavemult",
 					"id" : "obj-118",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -958,7 +958,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"hidden" : 1,
 					"order" : 1,
 					"source" : [ "obj-4", 0 ]

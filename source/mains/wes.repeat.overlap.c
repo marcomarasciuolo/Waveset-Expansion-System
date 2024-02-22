@@ -109,11 +109,11 @@ void C74_EXPORT ext_main(void* moduleRef)
     // buffer name (depending on the <m>naming</m> attribute).
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(repeatoverlap)
     
-    CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_repeatoverlap, sampMin_in);
-    CLASS_ATTR_LONG(c, "repeatMult", 0, t_buf_repeatoverlap, repeatMult_in);
+    CLASS_ATTR_LONG(c, "minsamp", 0, t_buf_repeatoverlap, sampMin_in);
+    CLASS_ATTR_LONG(c, "repeatmult", 0, t_buf_repeatoverlap, repeatMult_in);
     CLASS_ATTR_LONG(c, "cross", 0, t_buf_repeatoverlap, cross_in);
-    CLASS_ATTR_LONG(c, "nOverlap", 0, t_buf_repeatoverlap, nOverlap_in);
-    CLASS_ATTR_LONG(c, "maxOutChannel", 0, t_buf_repeatoverlap, maxOutChannel_in);
+    CLASS_ATTR_LONG(c, "noverlap", 0, t_buf_repeatoverlap, nOverlap_in);
+    CLASS_ATTR_LONG(c, "maxoutchannel", 0, t_buf_repeatoverlap, maxOutChannel_in);
 
     earsbufobj_class_add_outname_attr(c);
     earsbufobj_class_add_blocking_attr(c);

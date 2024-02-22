@@ -109,14 +109,14 @@ void C74_EXPORT ext_main(void* moduleRef)
     // buffer name (depending on the <m>naming</m> attribute).
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(wavereduction)
     
-    CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_wavereduction, sampMin_in);
-    CLASS_ATTR_LONG(c, "repeatMult", 0, t_buf_wavereduction, repeat_in);
+    CLASS_ATTR_LONG(c, "minsamp", 0, t_buf_wavereduction, sampMin_in);
+    CLASS_ATTR_LONG(c, "repeatmult", 0, t_buf_wavereduction, repeat_in);
     CLASS_ATTR_LONG(c, "cross", 0, t_buf_wavereduction, cross_in);
     //CLASS_ATTR_LONG(c, "interp", 0, t_buf_wavereduction, interp);
     
-    CLASS_ATTR_CHAR(c, "InterpActivate", 0, t_buf_wavereduction, interp);
-        CLASS_ATTR_STYLE_LABEL(c,"InterpActivate",0,"enumindex","Interpolation Activate");
-        CLASS_ATTR_ENUMINDEX(c,"InterpActivate", 0, "Off On");
+    CLASS_ATTR_CHAR(c, "Interpactivate", 0, t_buf_wavereduction, interp);
+        CLASS_ATTR_STYLE_LABEL(c,"Interpactivate",0,"enumindex","Interpolation Activate");
+        CLASS_ATTR_ENUMINDEX(c,"Interpactivate", 0, "Off On");
 
 
     earsbufobj_class_add_outname_attr(c);

@@ -173,7 +173,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nCross",
+					"attr" : "cross",
 					"id" : "obj-2",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -186,7 +186,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "minSamp",
+					"attr" : "minsamp",
 					"id" : "obj-4",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -199,7 +199,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "repeatMult",
+					"attr" : "repeatmult",
 					"id" : "obj-46",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -212,7 +212,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "maxOutChannel",
+					"attr" : "maxoutchannel",
 					"id" : "obj-5",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -225,7 +225,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nOverlap",
+					"attr" : "noverlap",
 					"id" : "obj-25",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -406,7 +406,7 @@
 					"patching_rect" : [ 522.5, 201.5, 100.0, 18.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-25", "attrui", "attr", "nOverlap", 5, "obj-25", "attrui", "int", 2, 5, "obj-5", "attrui", "attr", "maxOutChannel", 5, "obj-5", "attrui", "int", 2, 5, "obj-46", "attrui", "attr", "repeatMult", 5, "obj-46", "attrui", "int", 10, 5, "obj-4", "attrui", "attr", "minSamp", 5, "obj-4", "attrui", "int", 100, 5, "obj-2", "attrui", "attr", "nCross", 5, "obj-2", "attrui", "int", 1, 5, "obj-3", "number", "int", 500 ]
+							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-25", "attrui", "attr", "noverlap", 5, "obj-25", "attrui", "int", 4, 5, "obj-5", "attrui", "attr", "maxoutchannel", 5, "obj-5", "attrui", "int", 2, 5, "obj-46", "attrui", "attr", "repeatmult", 5, "obj-46", "attrui", "int", 0, 5, "obj-4", "attrui", "attr", "minsamp", 5, "obj-4", "attrui", "int", 100, 5, "obj-2", "attrui", "attr", "cross", 5, "obj-2", "attrui", "int", 5, 5, "obj-3", "number", "int", 50 ]
 						}
  ]
 				}
@@ -669,7 +669,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "snd2",
+					"buffername" : "snd4",
 					"id" : "obj-264",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -997,7 +997,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"hidden" : 1,
+					"order" : 1,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
+					"order" : 0,
 					"source" : [ "obj-43", 0 ]
 				}
 

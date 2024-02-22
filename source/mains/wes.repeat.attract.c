@@ -106,8 +106,8 @@ void C74_EXPORT ext_main(void* moduleRef)
     // buffer name (depending on the <m>naming</m> attribute).
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(pitchrepeat)
     
-    CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_pitchrepeat, sampMin_in);
-    CLASS_ATTR_LONG(c, "repeatMult", 0, t_buf_pitchrepeat, repeat_in);
+    CLASS_ATTR_LONG(c, "minsamp", 0, t_buf_pitchrepeat, sampMin_in);
+    CLASS_ATTR_LONG(c, "repeatmult", 0, t_buf_pitchrepeat, repeat_in);
     CLASS_ATTR_LONG(c, "cross", 0, t_buf_pitchrepeat, cross_in);
 
     earsbufobj_class_add_outname_attr(c);

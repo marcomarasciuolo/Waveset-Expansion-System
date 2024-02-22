@@ -122,7 +122,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "minSamp",
+					"attr" : "minsamp",
 					"id" : "obj-102",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -135,7 +135,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nCross",
+					"attr" : "cross",
 					"id" : "obj-107",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -161,7 +161,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "lagMultiply",
+					"attr" : "lagmultiply",
 					"id" : "obj-1",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -418,7 +418,7 @@
 					"patching_rect" : [ 522.5, 201.5, 100.0, 18.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 0, 5, "obj-1", "attrui", "attr", "lagMultiply", 5, "obj-1", "attrui", "int", 3, 5, "obj-52", "attrui", "attr", "repeat", 5, "obj-52", "attrui", "int", 10, 5, "obj-107", "attrui", "attr", "nCross", 5, "obj-107", "attrui", "int", 1, 5, "obj-102", "attrui", "attr", "minSamp", 5, "obj-102", "attrui", "int", 15, 5, "obj-97", "attrui", "attr", "freq", 5, "obj-97", "attrui", "float", 100.0 ]
+							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 0, 5, "obj-1", "attrui", "attr", "lagmultiply", 5, "obj-1", "attrui", "int", 0, 5, "obj-52", "attrui", "attr", "repeat", 5, "obj-52", "attrui", "int", 10, 5, "obj-107", "attrui", "attr", "cross", 5, "obj-107", "attrui", "int", 5, 5, "obj-102", "attrui", "attr", "minsamp", 5, "obj-102", "attrui", "int", 100, 5, "obj-97", "attrui", "attr", "freq", 5, "obj-97", "attrui", "float", 100.0 ]
 						}
  ]
 				}
@@ -681,7 +681,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "snd2",
+					"buffername" : "snd1",
 					"id" : "obj-264",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,

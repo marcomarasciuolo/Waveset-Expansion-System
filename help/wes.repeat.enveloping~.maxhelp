@@ -180,7 +180,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "minSamp",
+					"attr" : "minsamp",
 					"id" : "obj-88",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -193,7 +193,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nCross",
+					"attr" : "cross",
 					"id" : "obj-93",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -206,7 +206,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "envAmpSlope",
+					"attr" : "envampslope",
 					"id" : "obj-130",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -219,7 +219,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "envelopeAmpOn",
+					"attr" : "envelopeampon",
 					"id" : "obj-133",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -233,7 +233,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "envelopePitchOn",
+					"attr" : "envelopepitchon",
 					"id" : "obj-134",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -247,7 +247,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "envelopeAmpType",
+					"attr" : "envelopeamptype",
 					"id" : "obj-135",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -261,7 +261,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "envelopePitchType",
+					"attr" : "envelopepitchtype",
 					"id" : "obj-136",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -275,7 +275,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "repeatMultiply",
+					"attr" : "repeatmult",
 					"id" : "obj-137",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -288,7 +288,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "envPitchSlope",
+					"attr" : "envpitchslope",
 					"id" : "obj-131",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -301,7 +301,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "pitchMinFactor",
+					"attr" : "pitchmin",
 					"id" : "obj-171",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -315,7 +315,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "pitchMaxFactor",
+					"attr" : "pitchmax",
 					"id" : "obj-173",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -586,7 +586,7 @@
 					"patching_rect" : [ 558.0, 196.5, 100.0, 18.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 3, 5, "obj-173", "attrui", "attr", "pitchMaxFactor", 5, "obj-173", "attrui", "float", 2.0, 5, "obj-171", "attrui", "attr", "pitchMinFactor", 5, "obj-171", "attrui", "float", 0.050000000745058, 5, "obj-131", "attrui", "attr", "envPitchSlope", 5, "obj-131", "attrui", "float", 2.0, 5, "obj-137", "attrui", "attr", "repeatMultiply", 5, "obj-137", "attrui", "int", 5, 5, "obj-136", "attrui", "attr", "envelopePitchType", 5, "obj-136", "attrui", "int", 0, 5, "obj-135", "attrui", "attr", "envelopeAmpType", 5, "obj-135", "attrui", "int", 0, 5, "obj-134", "attrui", "attr", "envelopePitchOn", 5, "obj-134", "attrui", "int", 0, 5, "obj-133", "attrui", "attr", "envelopeAmpOn", 5, "obj-133", "attrui", "int", 0, 5, "obj-130", "attrui", "attr", "envAmpSlope", 5, "obj-130", "attrui", "float", 2.0, 5, "obj-93", "attrui", "attr", "nCross", 5, "obj-93", "attrui", "int", 1, 5, "obj-88", "attrui", "attr", "minSamp", 5, "obj-88", "attrui", "int", 150 ]
+							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-3", "number", "int", 3, 5, "obj-173", "attrui", "attr", "pitchmax", 5, "obj-173", "attrui", "float", 2.0, 5, "obj-171", "attrui", "attr", "pitchmin", 5, "obj-171", "attrui", "float", 0.050000000745058, 5, "obj-131", "attrui", "attr", "envpitchslope", 5, "obj-131", "attrui", "float", 2.0, 5, "obj-137", "attrui", "attr", "repeatmult", 5, "obj-137", "attrui", "int", 0, 5, "obj-136", "attrui", "attr", "envelopepitchtype", 5, "obj-136", "attrui", "int", 0, 5, "obj-135", "attrui", "attr", "envelopeamptype", 5, "obj-135", "attrui", "int", 0, 5, "obj-134", "attrui", "attr", "envelopepitchon", 5, "obj-134", "attrui", "int", 0, 5, "obj-133", "attrui", "attr", "envelopeampon", 5, "obj-133", "attrui", "int", 0, 5, "obj-130", "attrui", "attr", "envampslope", 5, "obj-130", "attrui", "float", 2.0, 5, "obj-93", "attrui", "attr", "cross", 5, "obj-93", "attrui", "int", 1, 5, "obj-88", "attrui", "attr", "minsamp", 5, "obj-88", "attrui", "int", 150 ]
 						}
  ]
 				}
@@ -1211,7 +1211,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"hidden" : 1,
 					"order" : 1,
 					"source" : [ "obj-43", 0 ]

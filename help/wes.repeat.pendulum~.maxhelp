@@ -328,7 +328,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nBackwards",
+					"attr" : "backwards",
 					"id" : "obj-18",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -341,7 +341,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nCross",
+					"attr" : "cross",
 					"id" : "obj-23",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -354,7 +354,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "minSamp",
+					"attr" : "minsamp",
 					"id" : "obj-28",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -367,7 +367,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nWaveBack",
+					"attr" : "waveback",
 					"id" : "obj-1",
 					"maxclass" : "attrui",
 					"numinlets" : 1,

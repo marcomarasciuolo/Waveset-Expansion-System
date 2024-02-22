@@ -106,9 +106,9 @@ void C74_EXPORT ext_main(void* moduleRef)
     // buffer name (depending on the <m>naming</m> attribute).
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(periodshift)
     
-    CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_periodshift, sampMin_in);
+    CLASS_ATTR_LONG(c, "minsamp", 0, t_buf_periodshift, sampMin_in);
     CLASS_ATTR_LONG(c, "cross", 0, t_buf_periodshift, cross_in);
-    CLASS_ATTR_LONG(c, "shiftMult", 0, t_buf_periodshift, shift_in);
+    CLASS_ATTR_LONG(c, "shiftmult", 0, t_buf_periodshift, shift_in);
 
     earsbufobj_class_add_outname_attr(c);
     earsbufobj_class_add_blocking_attr(c);

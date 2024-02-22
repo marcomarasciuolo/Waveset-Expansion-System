@@ -105,10 +105,10 @@ void C74_EXPORT ext_main(void* moduleRef)
     // buffer names (depending on the <m>naming</m> attribute).
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(wavependulum)
     
-    CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_wavependulum, sampMin_in);
+    CLASS_ATTR_LONG(c, "minsamp", 0, t_buf_wavependulum, sampMin_in);
     CLASS_ATTR_LONG(c, "cross", 0, t_buf_wavependulum, cross_in);
-    CLASS_ATTR_LONG(c, "nBackwards", 0, t_buf_wavependulum, nBackwards_in);
-    CLASS_ATTR_LONG(c, "nWaveBack", 0, t_buf_wavependulum, nWaveBack_in);
+    CLASS_ATTR_LONG(c, "backwards", 0, t_buf_wavependulum, nBackwards_in);
+    CLASS_ATTR_LONG(c, "waveback", 0, t_buf_wavependulum, nWaveBack_in);
 
     earsbufobj_class_add_outname_attr(c);
     earsbufobj_class_add_blocking_attr(c);
@@ -314,11 +314,10 @@ void wavependulum_bang(t_buf_wavependulum *x, t_buffer_obj *buffer, t_buffer_obj
             
             
             while (indice < nBackwards) {
-                //indice++;
+         
                 
                 currPeriod = (zerocrossindex[g] - zerocrossindex[g  - nWaveBack]);
                 
-                //newPeriod = CLAMP(round(currPeriod * 1./(nBackwards - (indice - 1))), 2, frames);
                 
                 newPeriod = CLAMP(round(currPeriod * (1 - ((float)indice / nBackwards))), 2, frames);
                 

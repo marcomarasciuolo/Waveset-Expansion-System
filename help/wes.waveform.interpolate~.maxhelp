@@ -82,7 +82,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nCross",
+					"attr" : "cross",
 					"id" : "obj-255",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -95,7 +95,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "minSamp",
+					"attr" : "minsamp",
 					"id" : "obj-256",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
@@ -108,7 +108,7 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "interpMax",
+					"attr" : "interpmax",
 					"id" : "obj-259",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
