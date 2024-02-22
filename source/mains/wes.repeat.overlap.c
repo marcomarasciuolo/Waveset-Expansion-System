@@ -132,7 +132,7 @@ void buf_repeatoverlap_assist(t_buf_repeatoverlap *x, void *b, long m, long a, c
         if (a == 0) // @in 0 @type symbol @digest Buffer name(s)
             sprintf(s, "symbol: Buffer Names");
         else if (a == 1) // @in 1 @type number/symbol @digest number of repeat
-            sprintf(s, "Buffer/float: multiply silence portion"); // @number of repeat
+            sprintf(s, "Buffer/float: number of repeat"); // @number of repeat
     } else {
         sprintf(s, "New Buffer Names"); // @out 0 @type symbol/list @digest Output buffer names(s)
                                             // @description Name of the buffer
