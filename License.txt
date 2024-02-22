@@ -3,7 +3,7 @@ LICENSE
 wes is distributed under the terms of the GNU General Public License version 3 (GPL-v3.0).
 
 The source code of ears can be obtained at the following URL:
-https://github.com/bachfamily/ears
+https://github.com/marcomarasciuolo/Waveset-Expansion-System.git
 
 wes has the following dependency
 • ears (https://github.com/bachfamily/ears)

@@ -339,7 +339,7 @@
 					"patching_rect" : [ 522.5, 201.5, 100.0, 18.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-2", "flonum", "float", 100.0, 5, "obj-259", "attrui", "attr", "interpMax", 5, "obj-259", "attrui", "int", 1, 5, "obj-256", "attrui", "attr", "minSamp", 5, "obj-256", "attrui", "int", 15, 5, "obj-255", "attrui", "attr", "nCross", 5, "obj-255", "attrui", "int", 1 ]
+							"data" : [ 4, "obj-254", "function", "clear", 8, "obj-254", "function", "add_with_curve", 0.0, 0.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 85.22149410222805, 1.0, 0, 0.0, 8, "obj-254", "function", "add_with_curve", 257.006553079947594, 0.0, 0, -0.25, 5, "obj-254", "function", "domain", 512.0, 6, "obj-254", "function", "range", 0.0, 1.0, 5, "obj-254", "function", "mode", 1, 5, "obj-2", "flonum", "float", 300.0, 5, "obj-259", "attrui", "attr", "interpmax", 5, "obj-259", "attrui", "int", 1, 5, "obj-256", "attrui", "attr", "minsamp", 5, "obj-256", "attrui", "int", 100, 5, "obj-255", "attrui", "attr", "cross", 5, "obj-255", "attrui", "int", 3 ]
 						}
  ]
 				}
