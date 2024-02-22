@@ -49,7 +49,7 @@
 typedef struct _buf_wavelag {
     t_earsbufobj        e_ob;
     long sampMin_in;
-    long nCross_in;
+    long cross_in;
     float lag_in;
     t_llll  *envin;
     
@@ -106,8 +106,8 @@ void C74_EXPORT ext_main(void* moduleRef)
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(wavelag)
     
     CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_wavelag, sampMin_in);
-    CLASS_ATTR_LONG(c, "nCross", 0, t_buf_wavelag, nCross_in);
-    CLASS_ATTR_FLOAT(c, "lagMult", 0, t_buf_wavelag, lag_in);
+    CLASS_ATTR_LONG(c, "cross", 0, t_buf_wavelag, cross_in);
+    CLASS_ATTR_FLOAT(c, "lagmult", 0, t_buf_wavelag, lag_in);
    
 
     earsbufobj_class_add_outname_attr(c);
@@ -151,7 +151,7 @@ t_buf_wavelag *buf_wavelag_new(t_symbol *s, short argc, t_atom *argv)
         
         x->envin = llll_from_text_buf("1", false);
         x->sampMin_in = 15;
-        x->nCross_in = 1;
+        x->cross_in = 1;
         x->lag_in = 1;
    
         earsbufobj_init((t_earsbufobj *)x,  0);
@@ -265,8 +265,8 @@ void wavelag_bang(t_buf_wavelag *x, t_buffer_obj *buffer, t_buffer_obj *out, t_b
     t_float        *envelope;
     
     int minsampl = CLAMP(x->sampMin_in, 1, 5000);
-    int ncross = CLAMP(x->nCross_in, 1, 1000);
-    float lagMultiply = CLAMP(x->lag_in, 0, 1000);
+    int ncross = CLAMP(x->cross_in, 1, 1000);
+    float lagmultiply = CLAMP(x->lag_in, 0, 1000);
     
     
     
@@ -360,7 +360,7 @@ void wavelag_bang(t_buf_wavelag *x, t_buffer_obj *buffer, t_buffer_obj *out, t_b
             if (m == zerocrossindex[g]-1) {
                 
                 if (modType == 1) {
-                    silence = lagMultiply;
+                    silence = lagmultiply;
                 } else {
                     silence = 1;
                 }

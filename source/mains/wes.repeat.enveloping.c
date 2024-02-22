@@ -51,7 +51,7 @@ Marco Marasciuolo
 typedef struct _buf_repeatgliss {
     t_earsbufobj        e_ob;
     long sampMin_in;
-    long nCross_in;
+    long cross_in;
     long repeatMult_in;
     float slopePitch_in;
     float slopeAmp_in;
@@ -115,7 +115,7 @@ void C74_EXPORT ext_main(void* moduleRef)
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(repeatgliss)
     
     CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_repeatgliss, sampMin_in);
-    CLASS_ATTR_LONG(c, "nCross", 0, t_buf_repeatgliss, nCross_in);
+    CLASS_ATTR_LONG(c, "cross", 0, t_buf_repeatgliss, cross_in);
     CLASS_ATTR_LONG(c, "repeatMultiply", 0, t_buf_repeatgliss, repeatMult_in);
     CLASS_ATTR_FLOAT(c, "envPitchSlope", 0, t_buf_repeatgliss, slopePitch_in);
     CLASS_ATTR_FLOAT(c, "envAmpSlope", 0, t_buf_repeatgliss, slopeAmp_in);
@@ -179,7 +179,7 @@ t_buf_repeatgliss *buf_repeatgliss_new(t_symbol *s, short argc, t_atom *argv)
         
         x->envin = llll_from_text_buf("1", false);
         x->sampMin_in = 150;
-        x->nCross_in = 1;
+        x->cross_in = 1;
         x->repeatMult_in = 5;
         x->slopePitch_in = 2;
         x->slopeAmp_in = 2;
@@ -311,7 +311,7 @@ void repeatgliss_bang(t_buf_repeatgliss *x, t_buffer_obj *buffer, t_buffer_obj *
  
     
     int minsampl = CLAMP(x->sampMin_in, 1, 5000);
-    int ncross = CLAMP(x->nCross_in, 1, 1000);
+    int ncross = CLAMP(x->cross_in, 1, 1000);
     int repeatMult = CLAMP(x->repeatMult_in, 1, 2000);
     float slopePitch = CLAMP(x->slopePitch_in, 0.001, 50);
     float slopeAmp = CLAMP(x->slopeAmp_in, 0.001, 50);

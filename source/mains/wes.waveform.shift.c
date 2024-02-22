@@ -54,7 +54,7 @@ typedef struct _buf_periodshift {
     t_earsbufobj        e_ob;
     long sampMin_in;
     long shift_in;
-    long nCross_in;
+    long cross_in;
     t_llll  *envin;
 } t_buf_periodshift;
 
@@ -107,7 +107,7 @@ void C74_EXPORT ext_main(void* moduleRef)
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(periodshift)
     
     CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_periodshift, sampMin_in);
-    CLASS_ATTR_LONG(c, "nCross", 0, t_buf_periodshift, nCross_in);
+    CLASS_ATTR_LONG(c, "cross", 0, t_buf_periodshift, cross_in);
     CLASS_ATTR_LONG(c, "shiftMult", 0, t_buf_periodshift, shift_in);
 
     earsbufobj_class_add_outname_attr(c);
@@ -152,7 +152,7 @@ t_buf_periodshift *buf_periodshift_new(t_symbol *s, short argc, t_atom *argv)
         x->envin = llll_from_text_buf("1", false);
         x->sampMin_in = 15;
         x->shift_in = 1;
-        x->nCross_in = 1;
+        x->cross_in = 1;
   
         earsbufobj_init((t_earsbufobj *)x,  0);
         
@@ -268,7 +268,7 @@ void periodshift_bang(t_buf_periodshift *x, t_buffer_obj *buffer, t_buffer_obj *
 
    
     int minsampl = CLAMP(x->sampMin_in, 1, 5000);
-    int ncross = CLAMP(x->nCross_in, 1, 1000);
+    int ncross = CLAMP(x->cross_in, 1, 1000);
     int shiftMult = CLAMP(x->shift_in, 0, 5000);
  
     

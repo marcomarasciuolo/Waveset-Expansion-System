@@ -53,10 +53,10 @@ typedef struct _buf_uniform {
     t_earsbufobj        e_ob;
     long sampMin_in;
     float freq_in;
-    long nCross_in;
+    long cross_in;
     long repeat_in;
     long freqMin_in;
-    long lagMult_in;
+    long lagmult_in;
     t_llll  *envin;
     
 } t_buf_uniform;
@@ -111,9 +111,9 @@ void C74_EXPORT ext_main(void* moduleRef)
     
     CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_uniform, sampMin_in);
     CLASS_ATTR_FLOAT(c, "freq", 0, t_buf_uniform, freq_in);
-    CLASS_ATTR_LONG(c, "nCross", 0, t_buf_uniform, nCross_in);
+    CLASS_ATTR_LONG(c, "cross", 0, t_buf_uniform, cross_in);
     CLASS_ATTR_LONG(c, "repeat", 0, t_buf_uniform, repeat_in);
-    CLASS_ATTR_LONG(c, "lagMultiply", 0, t_buf_uniform, lagMult_in);
+    CLASS_ATTR_LONG(c, "lagmultiply", 0, t_buf_uniform, lagmult_in);
 
     earsbufobj_class_add_outname_attr(c);
     earsbufobj_class_add_blocking_attr(c);
@@ -157,9 +157,9 @@ t_buf_uniform *buf_uniform_new(t_symbol *s, short argc, t_atom *argv)
         x->envin = llll_from_text_buf("1", false);
         x->sampMin_in = 15;
         x->freq_in = 100;
-        x->nCross_in = 1;
+        x->cross_in = 1;
         x->repeat_in = 3;
-        x->lagMult_in = 3;
+        x->lagmult_in = 3;
        
   
         earsbufobj_init((t_earsbufobj *)x,  0);
@@ -277,10 +277,10 @@ void uniform_bang(t_buf_uniform *x, t_buffer_obj *buffer, t_buffer_obj *out, t_b
     
     
     int minsampl = CLAMP(x->sampMin_in, 1, 5000);
-    int ncross = CLAMP(x->nCross_in, 1, 1000);
+    int ncross = CLAMP(x->cross_in, 1, 1000);
     float Freq = CLAMP(x->freq_in, 1, 5000);
     int repeat = CLAMP(x->repeat_in, 1, 2000);
-    float lagMultiply = CLAMP(x->lagMult_in, 0, 100);
+    float lagmultiply = CLAMP(x->lagmult_in, 0, 100);
 
 
     
@@ -392,7 +392,7 @@ void uniform_bang(t_buf_uniform *x, t_buffer_obj *buffer, t_buffer_obj *out, t_b
         while (g < crosscount) {
             
             if (modType == 1) {
-                lagAmount = (CLAMP(envOnset[g], 0, 1) * lagMultiply) + 1;
+                lagAmount = (CLAMP(envOnset[g], 0, 1) * lagmultiply) + 1;
             } else {
                 lagAmount = envOnset[g];
             }

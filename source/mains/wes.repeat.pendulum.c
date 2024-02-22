@@ -51,7 +51,7 @@ Marco Marasciuolo
 typedef struct _buf_wavependulum {
     t_earsbufobj        e_ob;
     long sampMin_in;
-    long nCross_in;
+    long cross_in;
     long nBackwards_in;
     long nWaveBack_in;
     
@@ -106,7 +106,7 @@ void C74_EXPORT ext_main(void* moduleRef)
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(wavependulum)
     
     CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_wavependulum, sampMin_in);
-    CLASS_ATTR_LONG(c, "nCross", 0, t_buf_wavependulum, nCross_in);
+    CLASS_ATTR_LONG(c, "cross", 0, t_buf_wavependulum, cross_in);
     CLASS_ATTR_LONG(c, "nBackwards", 0, t_buf_wavependulum, nBackwards_in);
     CLASS_ATTR_LONG(c, "nWaveBack", 0, t_buf_wavependulum, nWaveBack_in);
 
@@ -150,7 +150,7 @@ t_buf_wavependulum *buf_wavependulum_new(t_symbol *s, short argc, t_atom *argv)
     if (x) {
         
         x->sampMin_in = 15;
-        x->nCross_in = 1;
+        x->cross_in = 1;
         x->nBackwards_in = 3;
         x->nWaveBack_in = 3;
   
@@ -237,7 +237,7 @@ void wavependulum_bang(t_buf_wavependulum *x, t_buffer_obj *buffer, t_buffer_obj
     t_float        *tab;
 
     int minsampl = CLAMP(x->sampMin_in, 1, 5000);
-    int ncross = CLAMP(x->nCross_in, 1, 1000);
+    int ncross = CLAMP(x->cross_in, 1, 1000);
     int nBackwards = CLAMP(x->nBackwards_in, 1, 5000);
     int nWaveBack = CLAMP(x->nWaveBack_in, 1, 5000);
     

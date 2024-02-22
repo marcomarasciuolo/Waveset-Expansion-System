@@ -54,7 +54,7 @@ typedef struct _buf_repeatoverlap {
     t_earsbufobj        e_ob;
     long sampMin_in;
     int  repeatMult_in;
-    long nCross_in;
+    long cross_in;
     long nOverlap_in;
     int maxOutChannel_in;
     t_llll  *envin;
@@ -111,7 +111,7 @@ void C74_EXPORT ext_main(void* moduleRef)
     
     CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_repeatoverlap, sampMin_in);
     CLASS_ATTR_LONG(c, "repeatMult", 0, t_buf_repeatoverlap, repeatMult_in);
-    CLASS_ATTR_LONG(c, "nCross", 0, t_buf_repeatoverlap, nCross_in);
+    CLASS_ATTR_LONG(c, "cross", 0, t_buf_repeatoverlap, cross_in);
     CLASS_ATTR_LONG(c, "nOverlap", 0, t_buf_repeatoverlap, nOverlap_in);
     CLASS_ATTR_LONG(c, "maxOutChannel", 0, t_buf_repeatoverlap, maxOutChannel_in);
 
@@ -157,7 +157,7 @@ t_buf_repeatoverlap *buf_repeatoverlap_new(t_symbol *s, short argc, t_atom *argv
         x->envin = llll_from_text_buf("1", false);
         x->sampMin_in = 100;
         x->repeatMult_in = 10;
-        x->nCross_in = 1;
+        x->cross_in = 1;
         x->nOverlap_in = 2;
         x->maxOutChannel_in = 2;
   
@@ -278,7 +278,7 @@ void wavesetrepeat_bang(t_buf_repeatoverlap *x, t_buffer_obj *buffer, t_buffer_o
     t_float        *envelope;
 
     int minsampl = CLAMP(x->sampMin_in, 1, 5000);
-    int ncross = CLAMP(x->nCross_in, 1, 1000);
+    int ncross = CLAMP(x->cross_in, 1, 1000);
     int repeatMult = CLAMP(x->repeatMult_in, 0, 5000) ;
     int nOverlap = CLAMP(x->nOverlap_in, 2, 500);
     int maxOutChannel = CLAMP(x->maxOutChannel_in, 1, 16);

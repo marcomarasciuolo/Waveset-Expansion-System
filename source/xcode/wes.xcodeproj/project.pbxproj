@@ -160,16 +160,16 @@
 		988D40C92B49DF5A00663B67 /* wes.waveform.uniform~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wes.waveform.uniform~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C959AC2B49AAD3007DD6E5 /* wes.waveform.shift~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wes.waveform.shift~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CF95002B30BF400065C011 /* wes.waveform.lag~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wes.waveform.lag~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
-		98FCDBBF2B73D7BD004C9581 /* wes.repeat.attract.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.repeat.attract.c; path = ../mains.c/wes.repeat.attract.c; sourceTree = "<group>"; };
-		98FCDBC12B73D7BD004C9581 /* wes.repeat.overlap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.repeat.overlap.c; path = ../mains.c/wes.repeat.overlap.c; sourceTree = "<group>"; };
-		98FCDBC42B73D7BD004C9581 /* wes.repeat.pendulum.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.repeat.pendulum.c; path = ../mains.c/wes.repeat.pendulum.c; sourceTree = "<group>"; };
-		98FCDBC52B73D7BD004C9581 /* wes.waveform.interpolate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.waveform.interpolate.c; path = ../mains.c/wes.waveform.interpolate.c; sourceTree = "<group>"; };
-		98FCDBC62B73D7BD004C9581 /* wes.waveform.shift.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.waveform.shift.c; path = ../mains.c/wes.waveform.shift.c; sourceTree = "<group>"; };
-		98FCDBC72B73D7BD004C9581 /* wes.repeat.enveloping.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.repeat.enveloping.c; path = ../mains.c/wes.repeat.enveloping.c; sourceTree = "<group>"; };
-		98FCDBC82B73D7BD004C9581 /* wes.waveform.reduction.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.waveform.reduction.c; path = ../mains.c/wes.waveform.reduction.c; sourceTree = "<group>"; };
-		98FCDBC92B73D7BD004C9581 /* wes.waveform.lag.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.waveform.lag.c; path = ../mains.c/wes.waveform.lag.c; sourceTree = "<group>"; };
-		98FCDBCA2B73D7BD004C9581 /* wes.waveform.uniform.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.waveform.uniform.c; path = ../mains.c/wes.waveform.uniform.c; sourceTree = "<group>"; };
-		98FCDBCB2B73D7BD004C9581 /* wes.repeat.simplify.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = wes.repeat.simplify.c; path = ../mains.c/wes.repeat.simplify.c; sourceTree = "<group>"; };
+		98FCDBBF2B73D7BD004C9581 /* wes.repeat.attract.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.repeat.attract.c; sourceTree = "<group>"; };
+		98FCDBC12B73D7BD004C9581 /* wes.repeat.overlap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.repeat.overlap.c; sourceTree = "<group>"; };
+		98FCDBC42B73D7BD004C9581 /* wes.repeat.pendulum.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.repeat.pendulum.c; sourceTree = "<group>"; };
+		98FCDBC52B73D7BD004C9581 /* wes.waveform.interpolate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.waveform.interpolate.c; sourceTree = "<group>"; };
+		98FCDBC62B73D7BD004C9581 /* wes.waveform.shift.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.waveform.shift.c; sourceTree = "<group>"; };
+		98FCDBC72B73D7BD004C9581 /* wes.repeat.enveloping.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.repeat.enveloping.c; sourceTree = "<group>"; };
+		98FCDBC82B73D7BD004C9581 /* wes.waveform.reduction.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.waveform.reduction.c; sourceTree = "<group>"; };
+		98FCDBC92B73D7BD004C9581 /* wes.waveform.lag.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.waveform.lag.c; sourceTree = "<group>"; };
+		98FCDBCA2B73D7BD004C9581 /* wes.waveform.uniform.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.waveform.uniform.c; sourceTree = "<group>"; };
+		98FCDBCB2B73D7BD004C9581 /* wes.repeat.simplify.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = wes.repeat.simplify.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

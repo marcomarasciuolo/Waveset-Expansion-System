@@ -50,7 +50,7 @@ Marco Marasciuolo
 typedef struct _buf_wavesinterpolate {
     t_earsbufobj        e_ob;
     long sampMin_in;
-    long nCross_in;
+    long cross_in;
     int nInterp_in;
     t_llll  *envin;
     
@@ -107,7 +107,7 @@ void C74_EXPORT ext_main(void* moduleRef)
     EARSBUFOBJ_DECLARE_COMMON_METHODS_HANDLETHREAD(wavesinterpolate)
     
     CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_wavesinterpolate, sampMin_in);
-    CLASS_ATTR_LONG(c, "nCross", 0, t_buf_wavesinterpolate, nCross_in);
+    CLASS_ATTR_LONG(c, "cross", 0, t_buf_wavesinterpolate, cross_in);
     CLASS_ATTR_LONG(c, "interpMax", 0, t_buf_wavesinterpolate, nInterp_in);
    
 
@@ -152,7 +152,7 @@ t_buf_wavesinterpolate *buf_wavesinterpolate_new(t_symbol *s, short argc, t_atom
         
         x->envin = llll_from_text_buf("1", false);
         x->sampMin_in = 15;
-        x->nCross_in = 1;
+        x->cross_in = 1;
         x->nInterp_in = 1;
    
         earsbufobj_init((t_earsbufobj *)x,  0);
@@ -266,7 +266,7 @@ void wavesinterpolate_bang(t_buf_wavesinterpolate *x, t_buffer_obj *buffer, t_bu
     t_float        *envelope;
     
     int minsampl = CLAMP(x->sampMin_in, 1, 5000);
-    int ncross = CLAMP(x->nCross_in, 1, 1000);
+    int ncross = CLAMP(x->cross_in, 1, 1000);
     int interpMax = CLAMP(x->nInterp_in, 0, 5000);
    
     

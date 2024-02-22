@@ -53,7 +53,7 @@ typedef struct _buf_pitchrepeat {
     t_earsbufobj        e_ob;
     long sampMin_in;
     int  repeat_in;
-    long nCross_in;
+    long cross_in;
     t_llll  *envin;
     
 } t_buf_pitchrepeat;
@@ -108,7 +108,7 @@ void C74_EXPORT ext_main(void* moduleRef)
     
     CLASS_ATTR_LONG(c, "minSamp", 0, t_buf_pitchrepeat, sampMin_in);
     CLASS_ATTR_LONG(c, "repeatMult", 0, t_buf_pitchrepeat, repeat_in);
-    CLASS_ATTR_LONG(c, "nCross", 0, t_buf_pitchrepeat, nCross_in);
+    CLASS_ATTR_LONG(c, "cross", 0, t_buf_pitchrepeat, cross_in);
 
     earsbufobj_class_add_outname_attr(c);
     earsbufobj_class_add_blocking_attr(c);
@@ -152,7 +152,7 @@ t_buf_pitchrepeat *buf_pitchrepeat_new(t_symbol *s, short argc, t_atom *argv)
         x->envin = llll_from_text_buf("1", false);
         x->sampMin_in = 15;
         x->repeat_in = 0;
-        x->nCross_in = 1;
+        x->cross_in = 1;
   
         earsbufobj_init((t_earsbufobj *)x,  0);
         
@@ -267,7 +267,7 @@ void wavesetrepeat_bang(t_buf_pitchrepeat *x, t_buffer_obj *buffer, t_buffer_obj
     
     int minsampl = CLAMP(x->sampMin_in, 1, 10000);
     int repeatMult = CLAMP(x->repeat_in, 0, 5000);
-    int ncross = CLAMP(x->nCross_in, 1, 1000);
+    int ncross = CLAMP(x->cross_in, 1, 1000);
     
 
     long        frames, sampleRate, envelopeFrames ;
